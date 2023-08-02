@@ -11,9 +11,10 @@ include $(TOP)/configure/CONFIG
 # Create and install (or just install) into <top>/db
 # databases, templates, substitutions like this
 #DB += xxx.db
+DB += asyn_motor.db
 
 ### These databases come from motor
-DB_INSTALLS += $(MOTOR)/db/asyn_motor.db
+#DB_INSTALLS += $(MOTOR)/db/asyn_motor.db
 DB_INSTALLS += $(MOTOR)/db/asyn_motor_positions.req
 DB_INSTALLS += $(MOTOR)/db/asyn_motor_settings.req
 DB_INSTALLS += $(MOTOR)/db/basic_asyn_motor.db

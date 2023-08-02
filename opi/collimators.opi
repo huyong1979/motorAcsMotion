@@ -19,100 +19,41 @@
   <macros>
     <include_parent_macros>true</include_parent_macros>
   </macros>
-  <name>Collimators</name>
+  <name>collimators</name>
   <rules />
   <scripts />
   <show_close_button>true</show_close_button>
   <show_edit_range>true</show_edit_range>
   <show_grid>true</show_grid>
-  <show_ruler>false</show_ruler>
+  <show_ruler>true</show_ruler>
   <snap_to_geometry>true</snap_to_geometry>
   <widget_type>Display</widget_type>
-  <width>800</width>
-  <wuid>-70218475:135f8059270:-6c0e</wuid>
+  <width>760</width>
+  <wuid>-22dab912:135e98bf3f3:-6104</wuid>
   <x>0</x>
   <y>0</y>
-  <widget typeId="org.csstudio.opibuilder.widgets.TextInput" version="2.0.0">
+  <widget typeId="org.csstudio.opibuilder.widgets.tab" version="1.0.0">
     <actions hook="false" hook_all="false" />
-    <alarm_pulsing>false</alarm_pulsing>
-    <auto_size>false</auto_size>
-    <backcolor_alarm_sensitive>true</backcolor_alarm_sensitive>
+    <active_tab>0</active_tab>
     <background_color>
-      <color name="EngTitleBG" red="175" green="238" blue="238" />
+      <color red="240" green="240" blue="240" />
     </background_color>
-    <border_alarm_sensitive>false</border_alarm_sensitive>
     <border_color>
       <color red="0" green="128" blue="255" />
     </border_color>
     <border_style>0</border_style>
     <border_width>1</border_width>
-    <confirm_message></confirm_message>
-    <enabled>false</enabled>
-    <font>
-      <opifont.name fontName="Sans" height="12" style="1" pixels="false">Title</opifont.name>
-    </font>
-    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-    <foreground_color>
-      <color red="0" green="0" blue="0" />
-    </foreground_color>
-    <format_type>0</format_type>
-    <height>32</height>
-    <horizontal_alignment>1</horizontal_alignment>
-    <limits_from_pv>false</limits_from_pv>
-    <maximum>1.7976931348623157E308</maximum>
-    <minimum>-1.7976931348623157E308</minimum>
-    <multiline_input>false</multiline_input>
-    <name>Text Input</name>
-    <precision>0</precision>
-    <precision_from_pv>true</precision_from_pv>
-    <pv_name></pv_name>
-    <pv_value />
-    <rotation_angle>0.0</rotation_angle>
-    <rules />
-    <scale_options>
-      <width_scalable>true</width_scalable>
-      <height_scalable>true</height_scalable>
-      <keep_wh_ratio>false</keep_wh_ratio>
-    </scale_options>
-    <scripts />
-    <selector_type>0</selector_type>
-    <show_units>true</show_units>
-    <style>0</style>
-    <text>Horizontal Collimators</text>
-    <tooltip>$(pv_name)
-$(pv_value)</tooltip>
-    <transparent>false</transparent>
-    <visible>true</visible>
-    <widget_type>Text Input</widget_type>
-    <width>739</width>
-    <wuid>-70218475:135f8059270:-6c0d</wuid>
-    <x>0</x>
-    <y>0</y>
-  </widget>
-  <widget typeId="org.csstudio.opibuilder.widgets.groupingContainer" version="1.0.0">
-    <actions hook="false" hook_all="false" />
-    <background_color>
-      <color name="EngTitleBG" red="175" green="238" blue="238" />
-    </background_color>
-    <border_color>
-      <color red="0" green="128" blue="255" />
-    </border_color>
-    <border_style>12</border_style>
-    <border_width>1</border_width>
     <enabled>true</enabled>
-    <fc>false</fc>
-    <font>
-      <opifont.name fontName="Sans" height="10" style="0" pixels="false">Default</opifont.name>
-    </font>
     <foreground_color>
       <color red="192" green="192" blue="192" />
     </foreground_color>
-    <height>565</height>
-    <lock_children>false</lock_children>
+    <height>529</height>
+    <horizontal_tabs>true</horizontal_tabs>
     <macros>
       <include_parent_macros>true</include_parent_macros>
     </macros>
-    <name></name>
+    <minimum_tab_height>10</minimum_tab_height>
+    <name>Tabbed Container</name>
     <rules />
     <scale_options>
       <width_scalable>true</width_scalable>
@@ -120,43 +61,50 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
     <scripts />
-    <show_scrollbar>true</show_scrollbar>
+    <tab_0_background_color>
+      <color name="EngTitleBG" red="175" green="238" blue="238" />
+    </tab_0_background_color>
+    <tab_0_enabled>true</tab_0_enabled>
+    <tab_0_font>
+      <opifont.name fontName="Sans" height="10" style="1" pixels="false">Header1</opifont.name>
+    </tab_0_font>
+    <tab_0_foreground_color>
+      <color red="0" green="0" blue="0" />
+    </tab_0_foreground_color>
+    <tab_0_icon_path></tab_0_icon_path>
+    <tab_0_title>overview</tab_0_title>
+    <tab_count>1</tab_count>
     <tooltip></tooltip>
-    <transparent>false</transparent>
     <visible>true</visible>
-    <widget_type>Grouping Container</widget_type>
-    <width>517</width>
-    <wuid>-70218475:135f8059270:-6c0b</wuid>
-    <x>12</x>
-    <y>42</y>
-    <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0.0">
+    <widget_type>Tabbed Container</widget_type>
+    <width>750</width>
+    <wuid>-22dab912:135e98bf3f3:-6103</wuid>
+    <x>2</x>
+    <y>2</y>
+    <widget typeId="org.csstudio.opibuilder.widgets.groupingContainer" version="1.0.0">
       <actions hook="false" hook_all="false" />
       <background_color>
-        <color red="200" green="200" blue="200" />
+        <color red="240" green="240" blue="240" />
       </background_color>
       <border_color>
         <color red="0" green="128" blue="255" />
       </border_color>
-      <border_style>3</border_style>
+      <border_style>0</border_style>
       <border_width>1</border_width>
       <enabled>true</enabled>
+      <fc>false</fc>
       <font>
         <opifont.name fontName="Sans" height="10" style="0" pixels="false">Default</opifont.name>
       </font>
       <foreground_color>
         <color red="192" green="192" blue="192" />
       </foreground_color>
-      <group_name></group_name>
-      <height>235</height>
+      <height>498</height>
+      <lock_children>false</lock_children>
       <macros>
         <include_parent_macros>true</include_parent_macros>
-        <SYS>S37A:</SYS>
-        <DEV>HCOLL1:CTLR1:</DEV>
-        <P>${SYS}${DEV}</P>
       </macros>
-      <name>Linking Container</name>
-      <opi_file>motor.opi</opi_file>
-      <resize_behaviour>0</resize_behaviour>
+      <name>overview</name>
       <rules />
       <scale_options>
         <width_scalable>true</width_scalable>
@@ -164,185 +112,715 @@ $(pv_value)</tooltip>
         <keep_wh_ratio>false</keep_wh_ratio>
       </scale_options>
       <scripts />
+      <show_scrollbar>true</show_scrollbar>
       <tooltip></tooltip>
+      <transparent>true</transparent>
       <visible>true</visible>
-      <widget_type>Linking Container</widget_type>
-      <width>151</width>
-      <wuid>78f00061:142f2d15c7e:-78b3</wuid>
-      <x>6</x>
-      <y>6</y>
-    </widget>
-    <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0.0">
-      <actions hook="false" hook_all="false" />
-      <background_color>
-        <color red="200" green="200" blue="200" />
-      </background_color>
-      <border_color>
-        <color red="0" green="128" blue="255" />
-      </border_color>
-      <border_style>3</border_style>
-      <border_width>1</border_width>
-      <enabled>true</enabled>
-      <font>
-        <opifont.name fontName="Sans" height="10" style="0" pixels="false">Default</opifont.name>
-      </font>
-      <foreground_color>
-        <color red="192" green="192" blue="192" />
-      </foreground_color>
-      <group_name></group_name>
-      <height>235</height>
-      <macros>
-        <include_parent_macros>true</include_parent_macros>
-        <SYS>S38A:</SYS>
-        <DEV>HCOLL1:CTLR1:</DEV>
-        <P>${SYS}${DEV}</P>
-      </macros>
-      <name>Linking Container_1</name>
-      <opi_file>motor.opi</opi_file>
-      <resize_behaviour>0</resize_behaviour>
-      <rules />
-      <scale_options>
-        <width_scalable>true</width_scalable>
-        <height_scalable>true</height_scalable>
-        <keep_wh_ratio>false</keep_wh_ratio>
-      </scale_options>
-      <scripts />
-      <tooltip></tooltip>
-      <visible>true</visible>
-      <widget_type>Linking Container</widget_type>
-      <width>151</width>
-      <wuid>-3338127d:1892c390a2d:-7952</wuid>
-      <x>186</x>
-      <y>6</y>
-    </widget>
-    <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0.0">
-      <actions hook="false" hook_all="false" />
-      <background_color>
-        <color red="200" green="200" blue="200" />
-      </background_color>
-      <border_color>
-        <color red="0" green="128" blue="255" />
-      </border_color>
-      <border_style>3</border_style>
-      <border_width>1</border_width>
-      <enabled>true</enabled>
-      <font>
-        <opifont.name fontName="Sans" height="10" style="0" pixels="false">Default</opifont.name>
-      </font>
-      <foreground_color>
-        <color red="192" green="192" blue="192" />
-      </foreground_color>
-      <group_name></group_name>
-      <height>235</height>
-      <macros>
-        <include_parent_macros>true</include_parent_macros>
-        <SYS>S39A:</SYS>
-        <DEV>HCOLL1:CTLR1:</DEV>
-        <P>${SYS}${DEV}</P>
-      </macros>
-      <name>Linking Container_2</name>
-      <opi_file>motor.opi</opi_file>
-      <resize_behaviour>0</resize_behaviour>
-      <rules />
-      <scale_options>
-        <width_scalable>true</width_scalable>
-        <height_scalable>true</height_scalable>
-        <keep_wh_ratio>false</keep_wh_ratio>
-      </scale_options>
-      <scripts />
-      <tooltip></tooltip>
-      <visible>true</visible>
-      <widget_type>Linking Container</widget_type>
-      <width>151</width>
-      <wuid>-3338127d:1892c390a2d:-791a</wuid>
-      <x>354</x>
-      <y>6</y>
-    </widget>
-    <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0.0">
-      <actions hook="false" hook_all="false" />
-      <background_color>
-        <color red="200" green="200" blue="200" />
-      </background_color>
-      <border_color>
-        <color red="0" green="128" blue="255" />
-      </border_color>
-      <border_style>3</border_style>
-      <border_width>1</border_width>
-      <enabled>true</enabled>
-      <font>
-        <opifont.name fontName="Sans" height="10" style="0" pixels="false">Default</opifont.name>
-      </font>
-      <foreground_color>
-        <color red="192" green="192" blue="192" />
-      </foreground_color>
-      <group_name></group_name>
-      <height>235</height>
-      <macros>
-        <include_parent_macros>true</include_parent_macros>
-        <SYS>S40A:</SYS>
-        <DEV>HCOLL1:CTLR1:</DEV>
-        <P>${SYS}${DEV}</P>
-      </macros>
-      <name>Linking Container_3</name>
-      <opi_file>motor.opi</opi_file>
-      <resize_behaviour>0</resize_behaviour>
-      <rules />
-      <scale_options>
-        <width_scalable>true</width_scalable>
-        <height_scalable>true</height_scalable>
-        <keep_wh_ratio>false</keep_wh_ratio>
-      </scale_options>
-      <scripts />
-      <tooltip></tooltip>
-      <visible>true</visible>
-      <widget_type>Linking Container</widget_type>
-      <width>151</width>
-      <wuid>-3338127d:1892c390a2d:-78e2</wuid>
-      <x>6</x>
-      <y>264</y>
-    </widget>
-    <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0.0">
-      <actions hook="false" hook_all="false" />
-      <background_color>
-        <color red="200" green="200" blue="200" />
-      </background_color>
-      <border_color>
-        <color red="0" green="128" blue="255" />
-      </border_color>
-      <border_style>3</border_style>
-      <border_width>1</border_width>
-      <enabled>true</enabled>
-      <font>
-        <opifont.name fontName="Sans" height="10" style="0" pixels="false">Default</opifont.name>
-      </font>
-      <foreground_color>
-        <color red="192" green="192" blue="192" />
-      </foreground_color>
-      <group_name></group_name>
-      <height>235</height>
-      <macros>
-        <include_parent_macros>true</include_parent_macros>
-        <SYS>S01A:</SYS>
-        <DEV>HCOLL1:CTLR1:</DEV>
-        <P>${SYS}${DEV}</P>
-      </macros>
-      <name>Linking Container_4</name>
-      <opi_file>motor.opi</opi_file>
-      <resize_behaviour>0</resize_behaviour>
-      <rules />
-      <scale_options>
-        <width_scalable>true</width_scalable>
-        <height_scalable>true</height_scalable>
-        <keep_wh_ratio>false</keep_wh_ratio>
-      </scale_options>
-      <scripts />
-      <tooltip></tooltip>
-      <visible>true</visible>
-      <widget_type>Linking Container</widget_type>
-      <width>151</width>
-      <wuid>-3338127d:1892c390a2d:-78aa</wuid>
-      <x>186</x>
-      <y>264</y>
+      <widget_type>Grouping Container</widget_type>
+      <width>748</width>
+      <wuid>-22dab912:135e98bf3f3:-6102</wuid>
+      <x>1</x>
+      <y>1</y>
+      <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0.0">
+        <actions hook="false" hook_all="false" />
+        <background_color>
+          <color red="240" green="240" blue="240" />
+        </background_color>
+        <border_color>
+          <color red="0" green="128" blue="255" />
+        </border_color>
+        <border_style>10</border_style>
+        <border_width>1</border_width>
+        <enabled>true</enabled>
+        <font>
+          <opifont.name fontName="Sans" height="10" style="0" pixels="false">Default</opifont.name>
+        </font>
+        <foreground_color>
+          <color red="192" green="192" blue="192" />
+        </foreground_color>
+        <group_name></group_name>
+        <height>79</height>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SYS>S37A:</SYS>
+          <DEV>HCOLL1:CTLR1:</DEV>
+          <P>$(SYS)$(DEV)</P>
+          <Mtr>Mtr</Mtr>
+          <DESC>S37A Collimater</DESC>
+          <Sys>$(SYS)</Sys>
+          <Dev>$(DEV)</Dev>
+        </macros>
+        <name>Linking Container_1</name>
+        <opi_file>_motor.opi</opi_file>
+        <resize_behaviour>2</resize_behaviour>
+        <rules />
+        <scale_options>
+          <width_scalable>true</width_scalable>
+          <height_scalable>true</height_scalable>
+          <keep_wh_ratio>false</keep_wh_ratio>
+        </scale_options>
+        <scripts />
+        <tooltip>S37A Horizontal Collimator</tooltip>
+        <visible>true</visible>
+        <widget_type>Linking Container</widget_type>
+        <width>679</width>
+        <wuid>-5ff7b708:14301fafc81:-5aab</wuid>
+        <x>6</x>
+        <y>12</y>
+      </widget>
+      <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0.0">
+        <actions hook="false" hook_all="false" />
+        <background_color>
+          <color red="240" green="240" blue="240" />
+        </background_color>
+        <border_color>
+          <color red="0" green="128" blue="255" />
+        </border_color>
+        <border_style>10</border_style>
+        <border_width>1</border_width>
+        <enabled>true</enabled>
+        <font>
+          <opifont.name fontName="Sans" height="10" style="0" pixels="false">Default</opifont.name>
+        </font>
+        <foreground_color>
+          <color red="192" green="192" blue="192" />
+        </foreground_color>
+        <group_name></group_name>
+        <height>79</height>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SYS>S38A:</SYS>
+          <DEV>HCOLL1:CTLR1:</DEV>
+          <P>$(SYS)$(DEV)</P>
+          <Mtr>Mtr</Mtr>
+          <DESC>S38A Collimater</DESC>
+          <Sys>$(SYS)</Sys>
+          <Dev>$(DEV)</Dev>
+        </macros>
+        <name>Linking Container_1</name>
+        <opi_file>_motor.opi</opi_file>
+        <resize_behaviour>2</resize_behaviour>
+        <rules />
+        <scale_options>
+          <width_scalable>true</width_scalable>
+          <height_scalable>true</height_scalable>
+          <keep_wh_ratio>false</keep_wh_ratio>
+        </scale_options>
+        <scripts />
+        <tooltip>S38A Horizontal Collimator</tooltip>
+        <visible>true</visible>
+        <widget_type>Linking Container</widget_type>
+        <width>679</width>
+        <wuid>-6deac2a5:18993083f92:-7394</wuid>
+        <x>6</x>
+        <y>102</y>
+      </widget>
+      <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0.0">
+        <actions hook="false" hook_all="false" />
+        <background_color>
+          <color red="240" green="240" blue="240" />
+        </background_color>
+        <border_color>
+          <color red="0" green="128" blue="255" />
+        </border_color>
+        <border_style>10</border_style>
+        <border_width>1</border_width>
+        <enabled>true</enabled>
+        <font>
+          <opifont.name fontName="Sans" height="10" style="0" pixels="false">Default</opifont.name>
+        </font>
+        <foreground_color>
+          <color red="192" green="192" blue="192" />
+        </foreground_color>
+        <group_name></group_name>
+        <height>79</height>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SYS>S39A:</SYS>
+          <DEV>HCOLL1:CTLR1:</DEV>
+          <P>$(SYS)$(DEV)</P>
+          <Mtr>Mtr</Mtr>
+          <DESC>S39A Collimater</DESC>
+          <Sys>$(SYS)</Sys>
+          <Dev>$(DEV)</Dev>
+        </macros>
+        <name>Linking Container_2</name>
+        <opi_file>_motor.opi</opi_file>
+        <resize_behaviour>2</resize_behaviour>
+        <rules />
+        <scale_options>
+          <width_scalable>true</width_scalable>
+          <height_scalable>true</height_scalable>
+          <keep_wh_ratio>false</keep_wh_ratio>
+        </scale_options>
+        <scripts />
+        <tooltip>S39A Horizontal Collimator</tooltip>
+        <visible>true</visible>
+        <widget_type>Linking Container</widget_type>
+        <width>679</width>
+        <wuid>-6deac2a5:18993083f92:-7372</wuid>
+        <x>6</x>
+        <y>198</y>
+      </widget>
+      <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0.0">
+        <actions hook="false" hook_all="false" />
+        <background_color>
+          <color red="240" green="240" blue="240" />
+        </background_color>
+        <border_color>
+          <color red="0" green="128" blue="255" />
+        </border_color>
+        <border_style>10</border_style>
+        <border_width>1</border_width>
+        <enabled>true</enabled>
+        <font>
+          <opifont.name fontName="Sans" height="10" style="0" pixels="false">Default</opifont.name>
+        </font>
+        <foreground_color>
+          <color red="192" green="192" blue="192" />
+        </foreground_color>
+        <group_name></group_name>
+        <height>79</height>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SYS>S40A:</SYS>
+          <DEV>HCOLL1:CTLR1:</DEV>
+          <P>$(SYS)$(DEV)</P>
+          <Mtr>Mtr</Mtr>
+          <DESC>S40A Collimater</DESC>
+          <Sys>$(SYS)</Sys>
+          <Dev>$(DEV)</Dev>
+        </macros>
+        <name>Linking Container_3</name>
+        <opi_file>_motor.opi</opi_file>
+        <resize_behaviour>2</resize_behaviour>
+        <rules />
+        <scale_options>
+          <width_scalable>true</width_scalable>
+          <height_scalable>true</height_scalable>
+          <keep_wh_ratio>false</keep_wh_ratio>
+        </scale_options>
+        <scripts />
+        <tooltip>S40A Horizontal Collimator</tooltip>
+        <visible>true</visible>
+        <widget_type>Linking Container</widget_type>
+        <width>679</width>
+        <wuid>-6deac2a5:18993083f92:-7350</wuid>
+        <x>6</x>
+        <y>294</y>
+      </widget>
+      <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0.0">
+        <actions hook="false" hook_all="false" />
+        <background_color>
+          <color red="240" green="240" blue="240" />
+        </background_color>
+        <border_color>
+          <color red="0" green="128" blue="255" />
+        </border_color>
+        <border_style>10</border_style>
+        <border_width>1</border_width>
+        <enabled>true</enabled>
+        <font>
+          <opifont.name fontName="Sans" height="10" style="0" pixels="false">Default</opifont.name>
+        </font>
+        <foreground_color>
+          <color red="192" green="192" blue="192" />
+        </foreground_color>
+        <group_name></group_name>
+        <height>79</height>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SYS>S01A:</SYS>
+          <DEV>HCOLL1:CTLR1:</DEV>
+          <P>$(SYS)$(DEV)</P>
+          <Mtr>Mtr</Mtr>
+          <DESC>S01A Collimater</DESC>
+          <Sys>$(SYS)</Sys>
+          <Dev>$(DEV)</Dev>
+        </macros>
+        <name>Linking Container_4</name>
+        <opi_file>_motor.opi</opi_file>
+        <resize_behaviour>2</resize_behaviour>
+        <rules />
+        <scale_options>
+          <width_scalable>true</width_scalable>
+          <height_scalable>true</height_scalable>
+          <keep_wh_ratio>false</keep_wh_ratio>
+        </scale_options>
+        <scripts />
+        <tooltip>S01A Horizontal Collimator</tooltip>
+        <visible>true</visible>
+        <widget_type>Linking Container</widget_type>
+        <width>679</width>
+        <wuid>-6deac2a5:18993083f92:-732e</wuid>
+        <x>6</x>
+        <y>384</y>
+      </widget>
+      <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+        <actions hook="false" hook_all="false" />
+        <auto_size>false</auto_size>
+        <background_color>
+          <color name="EngTitleBG" red="175" green="238" blue="238" />
+        </background_color>
+        <border_color>
+          <color red="0" green="128" blue="255" />
+        </border_color>
+        <border_style>0</border_style>
+        <border_width>1</border_width>
+        <enabled>true</enabled>
+        <font>
+          <opifont.name fontName="Sans" height="10" style="0" pixels="false">Default</opifont.name>
+        </font>
+        <foreground_color>
+          <color red="0" green="0" blue="0" />
+        </foreground_color>
+        <height>25</height>
+        <horizontal_alignment>0</horizontal_alignment>
+        <name>Label_5</name>
+        <rules />
+        <scale_options>
+          <width_scalable>true</width_scalable>
+          <height_scalable>true</height_scalable>
+          <keep_wh_ratio>false</keep_wh_ratio>
+        </scale_options>
+        <scripts />
+        <show_scrollbar>false</show_scrollbar>
+        <text>STO</text>
+        <tooltip></tooltip>
+        <transparent>false</transparent>
+        <vertical_alignment>1</vertical_alignment>
+        <visible>true</visible>
+        <widget_type>Label</widget_type>
+        <width>55</width>
+        <wrap_words>true</wrap_words>
+        <wuid>-6deac2a5:18993083f92:-30b9</wuid>
+        <x>690</x>
+        <y>24</y>
+      </widget>
+      <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
+        <actions hook="false" hook_all="false" />
+        <alarm_pulsing>false</alarm_pulsing>
+        <auto_size>false</auto_size>
+        <backcolor_alarm_sensitive>true</backcolor_alarm_sensitive>
+        <background_color>
+          <color red="255" green="255" blue="255" />
+        </background_color>
+        <border_alarm_sensitive>true</border_alarm_sensitive>
+        <border_color>
+          <color red="0" green="128" blue="255" />
+        </border_color>
+        <border_style>4</border_style>
+        <border_width>1</border_width>
+        <enabled>true</enabled>
+        <font>
+          <opifont.name fontName="Sans" height="10" style="0" pixels="false">Default</opifont.name>
+        </font>
+        <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+        <foreground_color>
+          <color red="0" green="0" blue="0" />
+        </foreground_color>
+        <format_type>0</format_type>
+        <height>25</height>
+        <horizontal_alignment>0</horizontal_alignment>
+        <name>Text Update_10</name>
+        <precision>4</precision>
+        <precision_from_pv>false</precision_from_pv>
+        <pv_name>acsTech80:m1:STO</pv_name>
+        <pv_value />
+        <rotation_angle>0.0</rotation_angle>
+        <rules />
+        <scale_options>
+          <width_scalable>true</width_scalable>
+          <height_scalable>true</height_scalable>
+          <keep_wh_ratio>false</keep_wh_ratio>
+        </scale_options>
+        <scripts />
+        <show_units>false</show_units>
+        <text>status</text>
+        <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+        <transparent>false</transparent>
+        <vertical_alignment>1</vertical_alignment>
+        <visible>true</visible>
+        <widget_type>Text Update</widget_type>
+        <width>55</width>
+        <wrap_words>false</wrap_words>
+        <wuid>-6deac2a5:18993083f92:-30b8</wuid>
+        <x>690</x>
+        <y>54</y>
+      </widget>
+      <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+        <actions hook="false" hook_all="false" />
+        <auto_size>false</auto_size>
+        <background_color>
+          <color name="EngTitleBG" red="175" green="238" blue="238" />
+        </background_color>
+        <border_color>
+          <color red="0" green="128" blue="255" />
+        </border_color>
+        <border_style>0</border_style>
+        <border_width>1</border_width>
+        <enabled>true</enabled>
+        <font>
+          <opifont.name fontName="Sans" height="10" style="0" pixels="false">Default</opifont.name>
+        </font>
+        <foreground_color>
+          <color red="0" green="0" blue="0" />
+        </foreground_color>
+        <height>25</height>
+        <horizontal_alignment>0</horizontal_alignment>
+        <name>Label_1</name>
+        <rules />
+        <scale_options>
+          <width_scalable>true</width_scalable>
+          <height_scalable>true</height_scalable>
+          <keep_wh_ratio>false</keep_wh_ratio>
+        </scale_options>
+        <scripts />
+        <show_scrollbar>false</show_scrollbar>
+        <text>STO</text>
+        <tooltip></tooltip>
+        <transparent>false</transparent>
+        <vertical_alignment>1</vertical_alignment>
+        <visible>true</visible>
+        <widget_type>Label</widget_type>
+        <width>55</width>
+        <wrap_words>true</wrap_words>
+        <wuid>4ad6f36c:189b71562e7:-64bd</wuid>
+        <x>690</x>
+        <y>114</y>
+      </widget>
+      <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
+        <actions hook="false" hook_all="false" />
+        <alarm_pulsing>false</alarm_pulsing>
+        <auto_size>false</auto_size>
+        <backcolor_alarm_sensitive>true</backcolor_alarm_sensitive>
+        <background_color>
+          <color red="255" green="255" blue="255" />
+        </background_color>
+        <border_alarm_sensitive>true</border_alarm_sensitive>
+        <border_color>
+          <color red="0" green="128" blue="255" />
+        </border_color>
+        <border_style>4</border_style>
+        <border_width>1</border_width>
+        <enabled>true</enabled>
+        <font>
+          <opifont.name fontName="Sans" height="10" style="0" pixels="false">Default</opifont.name>
+        </font>
+        <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+        <foreground_color>
+          <color red="0" green="0" blue="0" />
+        </foreground_color>
+        <format_type>0</format_type>
+        <height>25</height>
+        <horizontal_alignment>0</horizontal_alignment>
+        <name>Text Update_1</name>
+        <precision>4</precision>
+        <precision_from_pv>false</precision_from_pv>
+        <pv_name>acsTech80:m2:STO</pv_name>
+        <pv_value />
+        <rotation_angle>0.0</rotation_angle>
+        <rules />
+        <scale_options>
+          <width_scalable>true</width_scalable>
+          <height_scalable>true</height_scalable>
+          <keep_wh_ratio>false</keep_wh_ratio>
+        </scale_options>
+        <scripts />
+        <show_units>false</show_units>
+        <text>status</text>
+        <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+        <transparent>false</transparent>
+        <vertical_alignment>1</vertical_alignment>
+        <visible>true</visible>
+        <widget_type>Text Update</widget_type>
+        <width>55</width>
+        <wrap_words>false</wrap_words>
+        <wuid>4ad6f36c:189b71562e7:-64bc</wuid>
+        <x>690</x>
+        <y>144</y>
+      </widget>
+      <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+        <actions hook="false" hook_all="false" />
+        <auto_size>false</auto_size>
+        <background_color>
+          <color name="EngTitleBG" red="175" green="238" blue="238" />
+        </background_color>
+        <border_color>
+          <color red="0" green="128" blue="255" />
+        </border_color>
+        <border_style>0</border_style>
+        <border_width>1</border_width>
+        <enabled>true</enabled>
+        <font>
+          <opifont.name fontName="Sans" height="10" style="0" pixels="false">Default</opifont.name>
+        </font>
+        <foreground_color>
+          <color red="0" green="0" blue="0" />
+        </foreground_color>
+        <height>25</height>
+        <horizontal_alignment>0</horizontal_alignment>
+        <name>Label_2</name>
+        <rules />
+        <scale_options>
+          <width_scalable>true</width_scalable>
+          <height_scalable>true</height_scalable>
+          <keep_wh_ratio>false</keep_wh_ratio>
+        </scale_options>
+        <scripts />
+        <show_scrollbar>false</show_scrollbar>
+        <text>STO</text>
+        <tooltip></tooltip>
+        <transparent>false</transparent>
+        <vertical_alignment>1</vertical_alignment>
+        <visible>true</visible>
+        <widget_type>Label</widget_type>
+        <width>55</width>
+        <wrap_words>true</wrap_words>
+        <wuid>4ad6f36c:189b71562e7:-64b7</wuid>
+        <x>690</x>
+        <y>216</y>
+      </widget>
+      <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
+        <actions hook="false" hook_all="false" />
+        <alarm_pulsing>false</alarm_pulsing>
+        <auto_size>false</auto_size>
+        <backcolor_alarm_sensitive>true</backcolor_alarm_sensitive>
+        <background_color>
+          <color red="255" green="255" blue="255" />
+        </background_color>
+        <border_alarm_sensitive>true</border_alarm_sensitive>
+        <border_color>
+          <color red="0" green="128" blue="255" />
+        </border_color>
+        <border_style>4</border_style>
+        <border_width>1</border_width>
+        <enabled>true</enabled>
+        <font>
+          <opifont.name fontName="Sans" height="10" style="0" pixels="false">Default</opifont.name>
+        </font>
+        <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+        <foreground_color>
+          <color red="0" green="0" blue="0" />
+        </foreground_color>
+        <format_type>0</format_type>
+        <height>25</height>
+        <horizontal_alignment>0</horizontal_alignment>
+        <name>Text Update_2</name>
+        <precision>4</precision>
+        <precision_from_pv>false</precision_from_pv>
+        <pv_name>acsTech80:m3:STO</pv_name>
+        <pv_value />
+        <rotation_angle>0.0</rotation_angle>
+        <rules />
+        <scale_options>
+          <width_scalable>true</width_scalable>
+          <height_scalable>true</height_scalable>
+          <keep_wh_ratio>false</keep_wh_ratio>
+        </scale_options>
+        <scripts />
+        <show_units>false</show_units>
+        <text>status</text>
+        <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+        <transparent>false</transparent>
+        <vertical_alignment>1</vertical_alignment>
+        <visible>true</visible>
+        <widget_type>Text Update</widget_type>
+        <width>55</width>
+        <wrap_words>false</wrap_words>
+        <wuid>4ad6f36c:189b71562e7:-64b6</wuid>
+        <x>690</x>
+        <y>246</y>
+      </widget>
+      <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+        <actions hook="false" hook_all="false" />
+        <auto_size>false</auto_size>
+        <background_color>
+          <color name="EngTitleBG" red="175" green="238" blue="238" />
+        </background_color>
+        <border_color>
+          <color red="0" green="128" blue="255" />
+        </border_color>
+        <border_style>0</border_style>
+        <border_width>1</border_width>
+        <enabled>true</enabled>
+        <font>
+          <opifont.name fontName="Sans" height="10" style="0" pixels="false">Default</opifont.name>
+        </font>
+        <foreground_color>
+          <color red="0" green="0" blue="0" />
+        </foreground_color>
+        <height>25</height>
+        <horizontal_alignment>0</horizontal_alignment>
+        <name>Label_3</name>
+        <rules />
+        <scale_options>
+          <width_scalable>true</width_scalable>
+          <height_scalable>true</height_scalable>
+          <keep_wh_ratio>false</keep_wh_ratio>
+        </scale_options>
+        <scripts />
+        <show_scrollbar>false</show_scrollbar>
+        <text>STO</text>
+        <tooltip></tooltip>
+        <transparent>false</transparent>
+        <vertical_alignment>1</vertical_alignment>
+        <visible>true</visible>
+        <widget_type>Label</widget_type>
+        <width>55</width>
+        <wrap_words>true</wrap_words>
+        <wuid>4ad6f36c:189b71562e7:-64b1</wuid>
+        <x>690</x>
+        <y>312</y>
+      </widget>
+      <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
+        <actions hook="false" hook_all="false" />
+        <alarm_pulsing>false</alarm_pulsing>
+        <auto_size>false</auto_size>
+        <backcolor_alarm_sensitive>true</backcolor_alarm_sensitive>
+        <background_color>
+          <color red="255" green="255" blue="255" />
+        </background_color>
+        <border_alarm_sensitive>true</border_alarm_sensitive>
+        <border_color>
+          <color red="0" green="128" blue="255" />
+        </border_color>
+        <border_style>4</border_style>
+        <border_width>1</border_width>
+        <enabled>true</enabled>
+        <font>
+          <opifont.name fontName="Sans" height="10" style="0" pixels="false">Default</opifont.name>
+        </font>
+        <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+        <foreground_color>
+          <color red="0" green="0" blue="0" />
+        </foreground_color>
+        <format_type>0</format_type>
+        <height>25</height>
+        <horizontal_alignment>0</horizontal_alignment>
+        <name>Text Update_3</name>
+        <precision>4</precision>
+        <precision_from_pv>false</precision_from_pv>
+        <pv_name>acsTech80:m4:STO</pv_name>
+        <pv_value />
+        <rotation_angle>0.0</rotation_angle>
+        <rules />
+        <scale_options>
+          <width_scalable>true</width_scalable>
+          <height_scalable>true</height_scalable>
+          <keep_wh_ratio>false</keep_wh_ratio>
+        </scale_options>
+        <scripts />
+        <show_units>false</show_units>
+        <text>status</text>
+        <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+        <transparent>false</transparent>
+        <vertical_alignment>1</vertical_alignment>
+        <visible>true</visible>
+        <widget_type>Text Update</widget_type>
+        <width>55</width>
+        <wrap_words>false</wrap_words>
+        <wuid>4ad6f36c:189b71562e7:-64b0</wuid>
+        <x>690</x>
+        <y>342</y>
+      </widget>
+      <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+        <actions hook="false" hook_all="false" />
+        <auto_size>false</auto_size>
+        <background_color>
+          <color name="EngTitleBG" red="175" green="238" blue="238" />
+        </background_color>
+        <border_color>
+          <color red="0" green="128" blue="255" />
+        </border_color>
+        <border_style>0</border_style>
+        <border_width>1</border_width>
+        <enabled>true</enabled>
+        <font>
+          <opifont.name fontName="Sans" height="10" style="0" pixels="false">Default</opifont.name>
+        </font>
+        <foreground_color>
+          <color red="0" green="0" blue="0" />
+        </foreground_color>
+        <height>25</height>
+        <horizontal_alignment>0</horizontal_alignment>
+        <name>Label_4</name>
+        <rules />
+        <scale_options>
+          <width_scalable>true</width_scalable>
+          <height_scalable>true</height_scalable>
+          <keep_wh_ratio>false</keep_wh_ratio>
+        </scale_options>
+        <scripts />
+        <show_scrollbar>false</show_scrollbar>
+        <text>STO</text>
+        <tooltip></tooltip>
+        <transparent>false</transparent>
+        <vertical_alignment>1</vertical_alignment>
+        <visible>true</visible>
+        <widget_type>Label</widget_type>
+        <width>55</width>
+        <wrap_words>true</wrap_words>
+        <wuid>4ad6f36c:189b71562e7:-64ab</wuid>
+        <x>690</x>
+        <y>396</y>
+      </widget>
+      <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
+        <actions hook="false" hook_all="false" />
+        <alarm_pulsing>false</alarm_pulsing>
+        <auto_size>false</auto_size>
+        <backcolor_alarm_sensitive>true</backcolor_alarm_sensitive>
+        <background_color>
+          <color red="255" green="255" blue="255" />
+        </background_color>
+        <border_alarm_sensitive>true</border_alarm_sensitive>
+        <border_color>
+          <color red="0" green="128" blue="255" />
+        </border_color>
+        <border_style>4</border_style>
+        <border_width>1</border_width>
+        <enabled>true</enabled>
+        <font>
+          <opifont.name fontName="Sans" height="10" style="0" pixels="false">Default</opifont.name>
+        </font>
+        <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+        <foreground_color>
+          <color red="0" green="0" blue="0" />
+        </foreground_color>
+        <format_type>0</format_type>
+        <height>25</height>
+        <horizontal_alignment>0</horizontal_alignment>
+        <name>Text Update_4</name>
+        <precision>4</precision>
+        <precision_from_pv>false</precision_from_pv>
+        <pv_name>acsTech80:m5:STO</pv_name>
+        <pv_value />
+        <rotation_angle>0.0</rotation_angle>
+        <rules />
+        <scale_options>
+          <width_scalable>true</width_scalable>
+          <height_scalable>true</height_scalable>
+          <keep_wh_ratio>false</keep_wh_ratio>
+        </scale_options>
+        <scripts />
+        <show_units>false</show_units>
+        <text>status</text>
+        <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+        <transparent>false</transparent>
+        <vertical_alignment>1</vertical_alignment>
+        <visible>true</visible>
+        <widget_type>Text Update</widget_type>
+        <width>55</width>
+        <wrap_words>false</wrap_words>
+        <wuid>4ad6f36c:189b71562e7:-64aa</wuid>
+        <x>690</x>
+        <y>426</y>
+      </widget>
     </widget>
   </widget>
 </display>

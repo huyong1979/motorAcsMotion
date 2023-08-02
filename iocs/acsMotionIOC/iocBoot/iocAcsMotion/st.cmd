@@ -16,8 +16,14 @@ cd "${TOP}/iocBoot/${IOC}"
 ##
 #< AcsMotionAuxIO.cmd
 
+set_savefile_path("./as","/save")
+set_requestfile_path("./as","/req")
+set_pass0_restoreFile("collimators.sav")
+
 iocInit
 
 ## motorUtil (allstop & alldone)
 motorUtilInit("$(PREFIX)")
 
+makeAutosaveFileFromDbInfo("./as/req/collimators.req", "autosaveFields_pass0")
+create_monitor_set("collimators.req", 15, "")

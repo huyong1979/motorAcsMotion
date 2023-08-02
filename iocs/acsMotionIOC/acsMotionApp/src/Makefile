@@ -28,10 +28,12 @@ acsMotion_DBD += busySupport.dbd
 #endif
 acsMotion_DBD += motorSupport.dbd
 acsMotion_DBD += AcsMotionSupport.dbd
+acsMotion_DBD += asSupport.dbd
 
 # Add all the support libraries needed by this IOC
 acsMotion_LIBS += AcsMotion
 acsMotion_LIBS += motor
+acsMotion_LIBS += autosave
 #ifdef BUSY
 acsMotion_LIBS += busy
 #endif

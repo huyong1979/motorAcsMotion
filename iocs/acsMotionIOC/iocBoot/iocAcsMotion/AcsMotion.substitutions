@@ -5,11 +5,11 @@ file "$(TOP)/db/asyn_motor.db"
 {
 pattern
 {P,                    M,     DTYP,        PORT, ADDR, DESC,          EGU, DIR, VELO, VBAS, ACCL, BDST, BVEL, BACC, MRES, PREC, DHLM, DLLM, INIT}
-{"S37A:HCOLL1:CTLR1:", "Mtr", "asynMotor", ACS1, 0,    "S37A HCOLL1", mm,  Pos, 1,    .1,   .2,   0,	1,    .2,   5e-05, 6,   1000, -1000, ""}
-{"S38A:HCOLL1:CTLR1:", "Mtr", "asynMotor", ACS1, 1,    "S38A HCOLL1", mm,  Pos, 1,    .1,   .2,   0,	1,    .2,   5e-05, 6,   1000, -1000, ""}
-{"S39A:HCOLL1:CTLR1:", "Mtr", "asynMotor", ACS1, 2,    "S39A HCOLL1", mm,  Pos, 1,    .1,   .2,   0,	1,    .2,   5e-05, 6,   1000, -1000, ""}
-{"S40A:HCOLL1:CTLR1:", "Mtr", "asynMotor", ACS1, 3,    "S40A HCOLL1", mm,  Pos, 1,    .1,   .2,   0,	1,    .2,   5e-05, 6,   1000, -1000, ""}
-{"S01A:HCOLL1:CTLR1:", "Mtr", "asynMotor", ACS1, 4,    "S01A HCOLL1", mm,  Pos, 1,    .1,   .2,   0,	1,    .2,   5e-05, 6,   1000, -1000, ""}
+{"S37A:HCOLL1:CTLR1:", "Mtr", "asynMotor", ACS1, 0,    "S37A HCOLL1", mm,  Pos, 1,    .1,   .2,   0,	1,    .2,   5e-05, 6,   137,  11.5, "" }
+{"S38A:HCOLL1:CTLR1:", "Mtr", "asynMotor", ACS1, 2,    "S38A HCOLL1", mm,  Pos, 1,    .1,   .2,   0,	1,    .2,   5e-05, 6,   137,  11.5, ""}
+{"S39A:HCOLL1:CTLR1:", "Mtr", "asynMotor", ACS1, 4,    "S39A HCOLL1", mm,  Pos, 1,    .1,   .2,   0,	1,    .2,   5e-05, 6,   137,  11.5, ""}
+{"S40A:HCOLL1:CTLR1:", "Mtr", "asynMotor", ACS1, 6,    "S40A HCOLL1", mm,  Pos, 1,    .1,   .2,   0,	1,    .2,   5e-05, 6,   137,  11.5, ""}
+{"S01A:HCOLL1:CTLR1:", "Mtr", "asynMotor", ACS2, 0,    "S01A HCOLL1", mm,  Pos, 1,    .1,   .2,   0,	1,    .2,   5e-05, 6,   137,  11.5, ""}
 }
 
 file "$(TOP)/db/profileMoveController.template"
@@ -38,7 +38,7 @@ pattern
 {m2,  ACS1,    1}
 {m3,  ACS1,    2}
 {m4,  ACS1,    3}
-{m5,  ACS1,    4}
+{m5,  ACS2,    0}
 }
 
 file "$(TOP)/db/SPiiPlusHoming.db"
