@@ -146,7 +146,7 @@
           <DEV>HCOLL1:CTLR1:</DEV>
           <P>$(SYS)$(DEV)</P>
           <Mtr>Mtr</Mtr>
-          <DESC>S37A Collimater</DESC>
+          <DESC>S37A Collimator</DESC>
           <Sys>$(SYS)</Sys>
           <Dev>$(DEV)</Dev>
         </macros>
@@ -193,7 +193,7 @@
           <DEV>HCOLL1:CTLR1:</DEV>
           <P>$(SYS)$(DEV)</P>
           <Mtr>Mtr</Mtr>
-          <DESC>S38A Collimater</DESC>
+          <DESC>S38A Collimator</DESC>
           <Sys>$(SYS)</Sys>
           <Dev>$(DEV)</Dev>
         </macros>
@@ -240,7 +240,7 @@
           <DEV>HCOLL1:CTLR1:</DEV>
           <P>$(SYS)$(DEV)</P>
           <Mtr>Mtr</Mtr>
-          <DESC>S39A Collimater</DESC>
+          <DESC>S39A Collimator</DESC>
           <Sys>$(SYS)</Sys>
           <Dev>$(DEV)</Dev>
         </macros>
@@ -287,7 +287,7 @@
           <DEV>HCOLL1:CTLR1:</DEV>
           <P>$(SYS)$(DEV)</P>
           <Mtr>Mtr</Mtr>
-          <DESC>S40A Collimater</DESC>
+          <DESC>S40A Collimator</DESC>
           <Sys>$(SYS)</Sys>
           <Dev>$(DEV)</Dev>
         </macros>
@@ -334,7 +334,7 @@
           <DEV>HCOLL1:CTLR1:</DEV>
           <P>$(SYS)$(DEV)</P>
           <Mtr>Mtr</Mtr>
-          <DESC>S01A Collimater</DESC>
+          <DESC>S01A Collimator</DESC>
           <Sys>$(SYS)</Sys>
           <Dev>$(DEV)</Dev>
         </macros>
