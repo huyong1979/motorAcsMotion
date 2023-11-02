@@ -650,7 +650,7 @@ $(pv_value)</tooltip>
     </scale_options>
     <scripts />
     <show_scrollbar>false</show_scrollbar>
-    <text>Delta</text>
+    <text>delta</text>
     <tooltip></tooltip>
     <transparent>false</transparent>
     <vertical_alignment>1</vertical_alignment>
@@ -735,13 +735,13 @@ $(pv_value)</tooltip>
     </scale_options>
     <scripts />
     <show_scrollbar>false</show_scrollbar>
-    <text></text>
+    <text>closed-loop</text>
     <tooltip></tooltip>
     <transparent>false</transparent>
     <vertical_alignment>1</vertical_alignment>
     <visible>true</visible>
     <widget_type>Label</widget_type>
-    <width>73</width>
+    <width>79</width>
     <wrap_words>true</wrap_words>
     <wuid>4ad6f36c:189b71562e7:-6679</wuid>
     <x>588</x>
